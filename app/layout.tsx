@@ -5,10 +5,7 @@ import "@/app/globals.css";
 //utils
 import { cn } from "@/lib/utils";
 
-//Components
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
-
+//font
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -27,9 +24,7 @@ export default function RootLayout({
           poppins.className
         )}
       >
-        <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );

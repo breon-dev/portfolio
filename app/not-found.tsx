@@ -16,7 +16,7 @@ export default function NotFound() {
         </ButtonWrapper>
       </div> 
       <Image
-        src="/assets/loading.gif"
+        src="/assets/error.gif"
         height={500}
         width={500}
         alt="404 image"
