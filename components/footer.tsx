@@ -39,7 +39,7 @@ export const Footer = () => {
             </ButtonWrapper>
           </div>
           <ButtonWrapper
-            href="#landing"
+            href="#top"
             type="redirect"
             className="flex flex-col justify-center m-auto mt-5 hover:-translate-y-1 w-fit transition-all"
           >

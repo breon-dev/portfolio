@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 //Components
-import { Projects } from "@/components/projects/projects";
+import { Projects } from "@/components/projects";
 import { Introduction } from "@/components/landing/introduction";
 import { Navigation } from "@/components/landing/navigation";
 import { Scroller } from "@/components/landing/scroller";
