@@ -1,3 +1,5 @@
+"use server";
+
 //components
 import { Heading } from "@/components/heading";
 import {
