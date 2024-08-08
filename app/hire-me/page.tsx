@@ -4,12 +4,13 @@ import { Metadata } from "next";
 import { HireForm } from "@/components/hire-me/hire-form";
 import { Heading } from "@/components/heading";
 
-
 //Component
 export default function HireMe() {
-  return <main>
-    <HireForm />
-  </main>;
+  return (
+    <main>
+      <HireForm />
+    </main>
+  );
 }
 
 export const metadata: Metadata = {
