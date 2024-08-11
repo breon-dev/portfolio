@@ -53,9 +53,9 @@ async function fetchProjects() {
 //Projects Containers
 export const Projects = async () => {
   let projects = await fetchProjects();
-  
+
   return (
-    <section className="pt-10" id="projects">
+    <section className="pt-24" id="projects">
       <Heading size="large">Projects</Heading>
       <section className="mt-20 flex flex-row flex-wrap justify-center items-center gap-6 m-auto">
         {projects?.map(
@@ -63,7 +63,14 @@ export const Projects = async () => {
             { title, description, codeLink, demoLink }: Project,
             index: number
           ) => (
-            <Project title={title} description={description} codeLink={codeLink} demoLink={demoLink} techStackIcons={['next', 'tailwindcss']} key={index} />
+            <Project
+              title={title}
+              description={description}
+              codeLink={codeLink}
+              demoLink={demoLink}
+              techStackIcons={["next", "tailwindcss"]}
+              key={index}
+            />
           )
         )}
         {!projects && <p>No Projects to be found</p>}

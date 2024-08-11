@@ -60,8 +60,9 @@ export const HireForm = () => {
   };
 
   return (
-    <section className="w-full flex justify-center items-center text-white flex-col gap-10">
+    <section className="w-full flex justify-center items-center text-white flex-col gap-5">
       <h2 className="text-center text-4xl font-bold">Have a Request?</h2>
+      <p className="text-gray-300 text-xl font-medium"><span className="text-purple-500">Flexible</span>, and able to <span className="text-purple-500">adapt</span> to any team</p>
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
