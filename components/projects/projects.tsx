@@ -1,5 +1,8 @@
 "use server";
 
+//Icons
+import * as Icons from "react-icons/si";
+
 //components
 import { Heading } from "@/components/heading";
 import {
@@ -12,6 +15,16 @@ import {
 } from "@/components/ui/card";
 import { ButtonWrapper } from "@/components/button-wrapper";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { DividerHorizontalIcon } from "@radix-ui/react-icons";
+
+//Types
+type Project = {
+  title: string;
+  description: string;
+  codeLink: string;
+  demoLink: string;
+};
 
 //Interfaces
 interface ProjectProps {
@@ -22,21 +35,13 @@ interface ProjectProps {
   techStackIcons: string[];
 }
 
-//types
-type Project = {
-  title: string;
-  description: string;
-  codeLink: string;
-  demoLink: string;
-};
-
 //Server-side fetching
 async function fetchProjects() {
   let projects: Project[] = [];
 
   try {
     let res = await fetch("http://localhost:3000/api/projects", {
-      cache: "no-store",
+      cache: "default",
     });
 
     if (!res.ok) {
@@ -89,18 +94,25 @@ export const Project = ({
 }: ProjectProps) => {
   return (
     <Card className="w-full max-w-md object-cover hover:scale-105 transition-all">
+      <CardContent className="mt-6">
+        <Image
+          src="/assets/bg.webp"
+          height={250}
+          width={1000}
+          alt="Image for the project"
+          className="rounded-lg"
+        />
+      </CardContent>
       <CardHeader>
         <CardTitle className="text-xl">{title}</CardTitle>
         <CardDescription className="text-lg">{description}</CardDescription>
       </CardHeader>
-      <CardContent>
-        <ul className="flex gap-2">
-          {techStackIcons?.map((icon, index) => (
-            <li key={index}>{icon}</li>
-          ))}
-        </ul>
-      </CardContent>
       <CardFooter className="flex justify-left items-center h-fit">
+        <div>
+          {techStackIcons.map((icon, index) => (
+            <p></p>
+          ))}
+        </div>
         <section className="flex gap-2">
           <ButtonWrapper href={codeLink} type="redirect">
             <Button variant="default">VIEW CODE</Button>

@@ -71,7 +71,7 @@ export const IconMapper = ({ title, tools }: IconMapperProps) => {
           return (
             <div
               key={index}
-              className="text-3xl w-fit flex items-center gap-3 opacity-70 hover:opacity-100 hover:translate-x-2 transition-all"
+              className="text-3xl flex items-center w-fit gap-3 opacity-70 hover:opacity-100 hover:translate-x-2 transition-all"
             >
               <IconComponent height={15} width={15} className={color} />
               <p className="text-white text-sm">{name}</p>
