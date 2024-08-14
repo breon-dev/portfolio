@@ -40,7 +40,7 @@ async function fetchProjects() {
   let projects: Project[] = [];
 
   try {
-    let res = await fetch("http://localhost:3000/api/projects", {
+    let res = await fetch("http://portfolio-bens-projects-12e2e63e.vercel.app/api/projects", {
       cache: "no-store",
     });
 
