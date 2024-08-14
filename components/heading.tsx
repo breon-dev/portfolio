@@ -1,6 +1,7 @@
-
+//utils
 import { cn } from "@/lib/utils";
 
+//interface
 interface HeadingProps {
   children: string;
   size?: "default" | "large";

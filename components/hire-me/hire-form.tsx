@@ -2,17 +2,14 @@
 
 //Zod
 import * as z from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 //Hooks
 import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { useToast } from "@/components/ui/use-toast";
 
-//Schemas
-import { EmailSchema } from "@/schemas";
-
-//ShadCn components
+//Components
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -26,11 +23,11 @@ import { Input } from "@/components/ui/input";
 import { ToastAction } from "@/components/ui/toast";
 import { FormActionMessage } from "@/components/hire-me/form-action-message";
 
+//Schemas
+import { EmailSchema } from "@/schemas";
+
 //Actions
 import { SubmitEmail } from "@/actions/submit-email";
-
-
-
 
 export const HireForm = () => {
   const [error, setError] = useState<string | undefined>("");

@@ -19,7 +19,7 @@ export const Navbar = () => {
           Home
         </Link>
         <Link
-          href="/projects"
+          href="/#projects"
           className="border-w-2 border-gray-950 border-b-2 hover:text-white hover:border-purple-400 transition-all"
         >
           Projects

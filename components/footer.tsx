@@ -1,4 +1,4 @@
-//icons
+//Icons
 import { 
   FaDiscord, 
   FaLinkedinIn, 
@@ -6,7 +6,7 @@ import {
   FaArrowUp, 
 } from "react-icons/fa";
 
-//components
+//Components
 import { ButtonWrapper } from "@/components/button-wrapper";
 import { Button } from "@/components/ui/button";
 

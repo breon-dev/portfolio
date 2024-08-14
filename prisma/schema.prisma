@@ -13,10 +13,10 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Projects {
+model Messages {
   id          Int    @id @default(autoincrement())
-  title       String @unique
-  description String
-  codeLink    String
-  demoLink    String
+  name        String
+  email       String
+  message     String
+  tools       String
 }
