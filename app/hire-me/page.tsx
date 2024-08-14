@@ -7,14 +7,14 @@ import { Heading } from "@/components/heading";
 //Component
 export default function HireMe() {
   return (
-    <main>
+    <main className="flex flex-col min-h-fit justify-center scroll-smooth">
       <HireForm />
     </main>
   );
 }
 
 export const metadata: Metadata = {
-  title: "Home | Ben Rodger - Full-stack Developer",
+  title: "Hire Me | Ben Rodger - Full-stack Developer",
   description:
     "Hi, I'm Ben. A Full-stack Developer with 2+ years of experience",
   keywords: [

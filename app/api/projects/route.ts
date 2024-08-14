@@ -9,21 +9,9 @@ type projects = {
 
 let data: projects[] = [
   { 
-    title: "hello", 
-    description: "this is a test",
-    codeLink: "/",
-    demoLink: "/"
-  },
-  {
-    title: "another",
-    description: "this is another test",
-    codeLink: "/",
-    demoLink: "/"
-  },
-  {
-    title: "hello",
-    description: "This is the final test",
-    codeLink: "/",
+    title: "Portfolio Website", 
+    description: "Personal website, for people to see my work and learn a little more about me.",
+    codeLink: "https://github.com/breon-dev/portfolio",
     demoLink: "/"
   }
 ];

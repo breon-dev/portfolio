@@ -41,7 +41,7 @@ async function fetchProjects() {
 
   try {
     let res = await fetch("http://localhost:3000/api/projects", {
-      cache: "default",
+      cache: "no-store",
     });
 
     if (!res.ok) {
@@ -78,7 +78,15 @@ export const Projects = async () => {
             />
           )
         )}
-        {!projects && <p>No Projects to be found</p>}
+        {projects?.length <= 3 && (
+          <Project
+            title="Coming soon"
+            description="Coming soon"
+            codeLink="/#projects"
+            demoLink="/#projects"
+            techStackIcons={[]}
+          />
+        )}
       </section>
     </section>
   );
